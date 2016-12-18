@@ -326,6 +326,6 @@ if __name__ == '__main__':
   barcodes = scanner.get_barcodes()
   for symbology, code, timestamp in barcodes:
     print '%s,%s,%s' % (symbology, code, str(timestamp).split('.')[0])
-  if barcodes:
-    scanner.clear_barcodes()
+#  if barcodes:
+#    scanner.clear_barcodes()
   scanner.power_down()
